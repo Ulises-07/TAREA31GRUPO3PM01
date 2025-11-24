@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="12dp"
+    android:padding="16dp"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
 
-    <EditText android:id="@+id/edtNombreE" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nombre"/>
-    <EditText android:id="@+id/edtDescripcionE" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Descripción" android:layout_marginTop="6dp"/>
-    <EditText android:id="@+id/edtPrecioE" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Precio" android:inputType="numberDecimal" android:layout_marginTop="6dp"/>
+    <EditText
+        android:id="@+id/edtNombreE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nombre"
+        android:padding="12dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
 
-    <Button android:id="@+id/btnActualizar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actualizar" android:layout_marginTop="8dp"/>
-    <Button android:id="@+id/btnEliminar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eliminar" android:layout_marginTop="6dp"/>
+    <EditText
+        android:id="@+id/edtDescripcionE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Descripción"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edtPrecioE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Precio"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="numberDecimal"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Actualizar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="@color/fondo_boton"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Eliminar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="@color/fondo_boton"/>
 </LinearLayout>

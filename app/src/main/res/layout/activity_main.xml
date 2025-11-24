@@ -3,26 +3,53 @@
     android:padding="24dp"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inicia Sesión"
+        android:layout_marginTop="30dp"
+        android:textSize="28sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
 
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Correo" />
+        android:layout_height="50dp"
+        android:hint="Correo"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="12dp"
+        android:textColor="#333"
+        android:textSize="16sp"/>
 
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Contraseña"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
         android:inputType="textPassword"
-        android:layout_marginTop="12dp" />
+        android:layout_marginBottom="18dp"
+        android:textColor="#333"
+        android:textSize="16sp"/>
 
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/fondo_boton"
         android:text="Entrar"
-        android:layout_marginTop="18dp"/>
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
 </LinearLayout>

@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="12dp"
+    android:padding="16dp"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
 
-    <Button android:id="@+id/btnNuevo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nuevo producto"/>
-    <Button android:id="@+id/btnRefrescar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Refrescar" android:layout_marginTop="6dp"/>
+    <Button
+        android:id="@+id/btnNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Nuevo producto"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="@color/fondo_boton"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnRefrescar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Refrescar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="@color/fondo_boton"
+        android:layout_marginBottom="12dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerProductos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="8dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:elevation="2dp"/>
 </LinearLayout>
