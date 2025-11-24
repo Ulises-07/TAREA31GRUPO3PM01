@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText android:id="@+id/edtNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nombre"/>
+    <EditText android:id="@+id/edtDescripcion" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Descripción" android:layout_marginTop="6dp"/>
+    <EditText android:id="@+id/edtPrecio" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Precio" android:inputType="numberDecimal" android:layout_marginTop="6dp"/>
+    <Button android:id="@+id/btnGuardar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Guardar" android:layout_marginTop="8dp"/>
+</LinearLayout>
